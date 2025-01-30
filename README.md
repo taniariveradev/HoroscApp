@@ -4,24 +4,24 @@ Esta aplicación es un ejemplo práctico de desarrollo de una app de alta calida
 
 ## Características principales:
 
-- Arquitectura MVVM: Implementación de una arquitectura limpia y escalable que separa la lógica de la interfaz de usuario.
+- Arquitectura MVVM
 
-- Fragmentos y Navigation Component: Uso de fragments junto con el componente de navegación para una experiencia de usuario fluida y bien estructurada.
+- Fragmentos y Navigation Component
 
-- Gradle KTS: Configuración del proyecto utilizando Gradle Kotlin Script (KTS) para una gestión más moderna y mantenible de las dependencias.
+- Gradle KTS
 
-- Inyección de dependencias: Aplicación de principios de inyección de dependencias para un código más modular y testeable.
+- Inyección de dependencias
 
-- StateFlow y Corrutinas: Manejo de flujos de datos asíncronos y operaciones en segundo plano de manera eficiente y reactiva.
+- StateFlow y Corrutinas
 
-- RecyclerView: Implementación de listas dinámicas y optimizadas para un rendimiento superior.
+- RecyclerView
 
-- Retrofit, Interceptores y Mappers: Consumo de APIs RESTful con Retrofit, incluyendo interceptores para manejo de cabeceras y mappers para transformación de datos.
+- Retrofit, Interceptores y Mappers
 
-- Intents: Comunicación entre componentes de la aplicación.
+- Intents
 
-- CameraX: Integración de la cámara utilizando la librería CameraX para una experiencia de captura de imágenes moderna y optimizada.
+- CameraX
 
-- Animaciones: Uso de animaciones para mejorar la experiencia de usuario y hacer la interfaz más atractiva.
+- Animaciones
 
-- Pruebas Unitarias y de UI: Implementación de pruebas automatizadas (UnitTest y UITest) para garantizar la calidad y estabilidad del código.
+- Pruebas Unitarias y de UI
