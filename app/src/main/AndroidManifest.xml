@@ -3,7 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET" />
+
     <uses-feature android:name="android.hardware.camera.any" />
+
     <uses-permission android:name="android.permission.CAMERA" />
 
     <application
@@ -17,6 +19,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HoroscApp"
         tools:targetApi="31">
+        <activity
+            android:name=".ui.detail.HoroscopeDetailActivity"
+            android:exported="false" />
         <activity
             android:name=".ui.home.MainActivity"
             android:exported="true">
