@@ -1,39 +1,57 @@
 [versions]
-agp = "8.7.3"
-kotlin = "1.9.24"
-coreKtx = "1.15.0"
-junit = "4.13.2"
-junitVersion = "1.2.1"
-espressoCore = "3.6.1"
-appcompat = "1.7.0"
-material = "1.12.0"
-activity = "1.10.0"
-constraintlayout = "2.2.0"
-constraintLayoutVersion = "2.0.4"
-lifecycleRuntimeKtxVersion = "2.6.1"
-retrofit = "2.9.0"
-coroutines = "1.7.3"
-picasso = "2.71828"
-datastore = "1.1.2"
-navigation = "2.7.7"
-hilt = "2.51"
+agp = "8.7.3" # Versión del Android Gradle Plugin
+kotlin = "1.9.24" # Versión de Kotlin
+coreKtx = "1.15.0" # Versión de Android Core KTX
+junit = "4.13.2" # Versión de JUnit para pruebas unitarias
+junitVersion = "1.2.1" # Versión de JUnit para pruebas en Android
+espressoCore = "3.6.1" # Versión de Espresso para pruebas de UI
+appcompat = "1.7.0" # Versión de AppCompat
+material = "1.12.0" # Versión de Material Design
+activity = "1.10.0" # Versión de Android Activity
+constraintlayout = "2.2.0" # Versión de ConstraintLayout
+retrofit = "2.9.0" # Versión de Retrofit
+picasso = "2.71828" # Versión de Picasso
+datastore = "1.1.2" # Versión de DataStore
+navigation = "2.8.6" # Versión de Navigation Component
+hilt = "2.51" # Versión de Dagger Hilt
 
 [libraries]
+# AndroidX Core y UI
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+
+# Pruebas
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
 androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+
+# Extensiones de Kotlin para Android Core
 androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+
+# Soporte para AppCompat
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+
+# Componentes de Material Design
 androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+
+# Layouts con ConstraintLayout
 androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+
+# Retrofit y Networking
 retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
 converter-gson = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "retrofit" }
+
+# Imágenes (Picasso)
 picasso = { group = "com.squareup.picasso", name = "picasso", version.ref = "picasso" }
+
+# DataStore (Almacenamiento local)
 datastore-preferences = { group = "androidx.datastore", name = "datastore-preferences", version.ref = "datastore" }
 datastore-core = { group = "androidx.datastore", name = "datastore-core", version.ref = "datastore" }
+
+# Navigation Component
 navigation-fragment = { group = "androidx.navigation", name = "navigation-fragment-ktx", version.ref = "navigation" }
 navigation-ui = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "navigation" }
+
+# Dagger Hilt (Inyección de dependencias)
 hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt" }
 hilt-compiler = { group = "com.google.dagger", name = "hilt-android-compiler", version.ref = "hilt" }
 
@@ -41,5 +59,4 @@ hilt-compiler = { group = "com.google.dagger", name = "hilt-android-compiler", v
 android-application = { id = "com.android.application", version.ref = "agp" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 hilt-android = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
-kotlin-kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kotlin" }
 
