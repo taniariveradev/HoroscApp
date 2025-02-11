@@ -9,8 +9,12 @@ class AuthInterceptor @Inject constructor() : Interceptor {
     override fun intercept(chain: Interceptor.Chain): Response {
         val request = chain.request()
             .newBuilder()
-            .header("Authorization", "prueba auth")
+            .header("Authorization", "prueba auth") //tokenManager.getToken()
             .build()
         return chain.proceed(request)
     }
+}
+
+class TokenManager @Inject constructor() {
+    fun getToken(): String = "Dale estrellita a mi Git :D"
 }
