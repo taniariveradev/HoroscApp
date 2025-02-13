@@ -2,6 +2,7 @@
 agp = "8.7.3" # Versión del Android Gradle Plugin
 kotlin = "1.9.24" # Versión de Kotlin
 coreKtx = "1.15.0" # Versión de Android Core KTX
+kotlintest = "5.8.1" # Versión de KotlinTest
 junit = "4.13.2" # Versión de JUnit para pruebas unitarias
 junitVersion = "1.2.1" # Versión de JUnit para pruebas en Android
 espressoCore = "3.6.1" # Versión de Espresso para pruebas de UI
@@ -25,6 +26,8 @@ androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = 
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
 androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+kotlintest-runner = { group = "io.kotest", name = "kotest-runner-junit5", version.ref = "kotlintest" }
+kotlintest-assertions = { group = "io.kotest", name = "kotest-assertions-core", version.ref = "kotlintest" }
 
 # Extensiones de Kotlin para Android Core
 androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }

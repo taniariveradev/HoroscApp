@@ -86,7 +86,10 @@ dependencies {
     implementation(libs.camerax.view)
     implementation(libs.camerax.extensions)
 
+    // Testing
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+    testImplementation(libs.kotlintest.runner)
+    testImplementation(libs.kotlintest.assertions)
 }
