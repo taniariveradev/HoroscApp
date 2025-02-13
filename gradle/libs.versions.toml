@@ -15,6 +15,7 @@ datastore = "1.1.2" # Versión de DataStore
 navigation = "2.8.6" # Versión de Navigation Component
 hilt = "2.51" # Versión de Dagger Hilt
 okhttp = "4.12.0" # Versión para OkHttp y Logging Interceptor
+camerax = "1.4.1" # Versión de CameraX
 
 [libraries]
 # AndroidX Core y UI
@@ -56,6 +57,13 @@ navigation-ui = { group = "androidx.navigation", name = "navigation-ui-ktx", ver
 # Dagger Hilt (Inyección de dependencias)
 hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt" }
 hilt-compiler = { group = "com.google.dagger", name = "hilt-android-compiler", version.ref = "hilt" }
+
+# CameraX
+camerax-core = { group = "androidx.camera", name = "camera-core", version.ref = "camerax" }
+camerax-camera2 = { group = "androidx.camera", name = "camera-camera2", version.ref = "camerax" }
+camerax-lifecycle = { group = "androidx.camera", name = "camera-lifecycle", version.ref = "camerax" }
+camerax-view = { group = "androidx.camera", name = "camera-view", version.ref = "camerax" }
+camerax-extensions = { group = "androidx.camera", name = "camera-extensions", version.ref = "camerax" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
