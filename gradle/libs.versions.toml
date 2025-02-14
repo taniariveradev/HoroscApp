@@ -7,6 +7,9 @@ mockk = "1.13.10" # Versión de MockK
 junit = "4.13.2" # Versión de JUnit para pruebas unitarias
 junitVersion = "1.2.1" # Versión de JUnit para pruebas en Android
 espressoCore = "3.6.1" # Versión de Espresso para pruebas de UI
+espressoContrib = "3.6.1" # Versión de Espresso Contrib
+espressoIntents = "3.6.1" # Versión de Espresso Intents
+fragmentTesting = "1.8.6" # Versión de Fragment Testing
 appcompat = "1.7.0" # Versión de AppCompat
 material = "1.12.0" # Versión de Material Design
 activity = "1.10.0" # Versión de Android Activity
@@ -14,7 +17,7 @@ constraintlayout = "2.2.0" # Versión de ConstraintLayout
 retrofit = "2.9.0" # Versión de Retrofit
 picasso = "2.71828" # Versión de Picasso
 datastore = "1.1.2" # Versión de DataStore
-navigation = "2.8.6" # Versión de Navigation Component
+navigation = "2.8.7" # Versión de Navigation Component
 hilt = "2.51" # Versión de Dagger Hilt
 okhttp = "4.12.0" # Versión para OkHttp y Logging Interceptor
 camerax = "1.4.1" # Versión de CameraX
@@ -23,14 +26,24 @@ camerax = "1.4.1" # Versión de CameraX
 # AndroidX Core y UI
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 
-# Pruebas
+# Unit Testing
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
-androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+# KotlinTest Unit Testing
 kotlintest-runner = { group = "io.kotest", name = "kotest-runner-junit5", version.ref = "kotlintest" }
 kotlintest-assertions = { group = "io.kotest", name = "kotest-assertions-core", version.ref = "kotlintest" }
+# MockK Unit Testing
 mockk = { group = "io.mockk", name = "mockk", version.ref = "mockk" }
 mockk-android = { group = "io.mockk", name = "mockk-android", version.ref = "mockk" }
+# Espresso UI Testing
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+espresso-contrib = { group = "androidx.test.espresso", name = "espresso-contrib", version.ref = "espressoContrib" }
+espresso-intents = { group = "androidx.test.espresso", name = "espresso-intents", version.ref = "espressoIntents" }
+# Fragment UI Testing
+fragment-testing = { group = "androidx.fragment", name = "fragment-testing", version.ref = "fragmentTesting" }
+# Dagger Hilt UI Testing
+hilt-android-testing = { group = "com.google.dagger", name = "hilt-android-testing", version.ref = "hilt" }
+hilt-android-compiler = { group = "com.google.dagger", name = "hilt-android-compiler", version.ref = "hilt" }
 
 # Extensiones de Kotlin para Android Core
 androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
